@@ -34,12 +34,9 @@ public class Productos extends VentanaImagenesAbstracta{
      * Creates new form Productos
      */
     public Productos() {
-        this.fondo = new FondoPanel();
-        this.setContentPane(fondo);
         initComponents();
         this.setLocationRelativeTo(this);
-        this.pintarImagen(jLabel2, "src/mx/uaemex/fi/ia/recursos/Cuenta Debito_1.png");
-        this.pintarImagen(jLabel5, "src/mx/uaemex/fi/ia/recursos/Cuenta Ahorro.png");
+
     }
 
     /**
@@ -51,203 +48,129 @@ public class Productos extends VentanaImagenesAbstracta{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        regresar = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         crearDebito = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         crearAhorro = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        regresar = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImage(new ImageIcon(getClass().getResource("/mx/uaemex/fi/ia/recursos/banco.png")).getImage());
-
-        regresar.setBackground(new java.awt.Color(255, 204, 153));
-        regresar.setFont(new java.awt.Font("Trajan Pro", 1, 11)); // NOI18N
-        regresar.setText("Regresar");
-        regresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regresarActionPerformed(evt);
-            }
-        });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("Cuenta de Debito");
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Poppins", 1, 10)); // NOI18N
+        jTextArea3.setForeground(new java.awt.Color(220, 27, 251));
         jTextArea3.setRows(5);
-        jTextArea3.setText("-Transfiere a cualquier banco de forma ilimitada.\n\n-Paga en cualquier comercio con tu tarjeta.\n\n-Sin comisión anual al mantener un saldo mínimo de $1000.\n\n-Recibe depósitos de cualquier banco al instante.\n\n-Retira tu dinero en cualquier cajero automático del banco sin comisión.\n\n-Recibe promociones con el uso de la tarjeta.");
+        jTextArea3.setText("REALIZA TRANSFERENCIAS A CUALQUIER BANCO SIN\nCOSTO ALGUNO\n\nSIN COMISION DE ANUALIDAD\n\nRECIBE DEPOSITOS Y PAGOS AL INSTANTE\n\nREALIZA RETIROS EN CUALQUIER CAJERO AUTOMATICO\n\nRECIBE PROMOCIONES Y BENEFICIOS POR EL USO DE TU\nTARJETA");
         jScrollPane3.setViewportView(jTextArea3);
 
-        crearDebito.setBackground(new java.awt.Color(204, 255, 204));
-        crearDebito.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        crearDebito.setText("Crear");
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 330, 210));
+
+        crearDebito.setBackground(new java.awt.Color(220, 27, 251));
+        crearDebito.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
+        crearDebito.setForeground(new java.awt.Color(255, 255, 255));
+        crearDebito.setText("CREAR CUENTA DE DEBITO");
         crearDebito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 crearDebitoActionPerformed(evt);
             }
         });
+        jPanel1.add(crearDebito, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 390, 190, 30));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane3)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(crearDebito)))
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(131, 131, 131)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel3))
-                .addContainerGap(156, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(crearDebito)
-                .addContainerGap())
-        );
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel6.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(220, 27, 251));
+        jLabel6.setText("CUENTA DE AHORRO");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, 30));
 
         jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Poppins", 1, 10)); // NOI18N
+        jTextArea2.setForeground(new java.awt.Color(220, 27, 251));
         jTextArea2.setRows(5);
-        jTextArea2.setText("-Transfiere a cualquier banco de forma ilimitada.\n\n-Retira tu dinero de cualquier cajero automático del banco sin comisión.\n\n-No necesitas saldo mínimo.\n\n-Cancela en cualquier momento.");
+        jTextArea2.setText("REALIZA TRANSFERENCIAS A CUALQUIER BANCO SIN\nCOSTO ALGUNO\n\nREALIZA RETIROS EN CUALQUIER CAJERO AUTOMATICO\n\nNO REQUIERE SALDO MINIMO\n\nCANCELA EN CUALQUIER MOMENTO");
         jScrollPane2.setViewportView(jTextArea2);
 
-        crearAhorro.setBackground(new java.awt.Color(204, 255, 204));
-        crearAhorro.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        crearAhorro.setText("Crear");
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 340, 210));
+
+        crearAhorro.setBackground(new java.awt.Color(220, 27, 251));
+        crearAhorro.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
+        crearAhorro.setForeground(new java.awt.Color(255, 255, 255));
+        crearAhorro.setText("CREAR CUENTA DE AHORRO");
         crearAhorro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 crearAhorroActionPerformed(evt);
             }
         });
+        jPanel1.add(crearAhorro, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 390, 190, 30));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("Cuenta de Ahorro");
+        jLabel5.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(220, 27, 251));
+        jLabel5.setText("CONOCE NUESTROS PRODUCTOS");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 400, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jScrollPane2)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 147, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(crearAhorro)
-                                .addContainerGap())
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(123, 123, 123))))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(133, 133, 133))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(crearAhorro)
-                .addContainerGap())
-        );
+        regresar.setBackground(new java.awt.Color(220, 27, 251));
+        regresar.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
+        regresar.setForeground(new java.awt.Color(255, 255, 255));
+        regresar.setText("REGRESAR");
+        regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regresarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 450, -1, 30));
 
-        jPanel3.setBackground(new java.awt.Color(248, 253, 217));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jLabel7.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(220, 27, 251));
+        jLabel7.setText("CUENTA DE DEBITO");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, 30));
 
-        jLabel1.setFont(new java.awt.Font("Unispace", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel1.setText("NUESTROS PRODUCTOS");
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 510));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(759, 99, -1, 370));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(regresar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(41, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(336, 336, 336))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(19, 19, 19)
-                .addComponent(regresar)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 99, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -260,14 +183,6 @@ public class Productos extends VentanaImagenesAbstracta{
         }
     }//GEN-LAST:event_crearDebitoActionPerformed
 
-    private void crearAhorroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearAhorroActionPerformed
-        try {
-            this.control.ejecutaComando(CREAR_CUENTA_AHORRO, null);
-        } catch (AgenteException ex) {
-            Logger.getLogger(Productos.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_crearAhorroActionPerformed
-
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
         try {
             this.control.ejecutaComando(REGRESAR, null);
@@ -275,6 +190,14 @@ public class Productos extends VentanaImagenesAbstracta{
             Logger.getLogger(Productos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_regresarActionPerformed
+
+    private void crearAhorroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearAhorroActionPerformed
+        try {
+            this.control.ejecutaComando(CREAR_CUENTA_AHORRO, null);
+        } catch (AgenteException ex) {
+            Logger.getLogger(Productos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_crearAhorroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -315,14 +238,13 @@ public class Productos extends VentanaImagenesAbstracta{
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton crearAhorro;
     private javax.swing.JButton crearDebito;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea2;
