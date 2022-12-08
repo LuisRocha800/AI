@@ -29,8 +29,7 @@ public class CuentaPrincipal extends VentanaImagenesAbstracta {
     
     public static final String CERRAR_SESION = "Cerrar Sesion";
     
-    FondoPanel fondo;
-    
+ 
     /**
      * Creates new form CuentaPrincipal
      */

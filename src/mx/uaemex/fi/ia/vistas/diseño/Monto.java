@@ -20,10 +20,6 @@ public class Monto extends VentanaAbstracta {
     
     public static final String CREAR_CUENTA_DEBITO_MONTO = "Crear Cuenta de Debito con Monto Inicial";
     
-    FondoPanel fondo;
-    /**
-     * Creates new form Monto
-     */
     public Monto() {
         initComponents();
          setLocationRelativeTo(null);

@@ -25,7 +25,6 @@ public class Cancelar extends VentanaAbstracta {
     /**
      * Creates new form Cancelar
      */
-    FondoPanel fondo;
     public Cancelar() {
         initComponents();
          setLocationRelativeTo(null);

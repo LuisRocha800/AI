@@ -13,9 +13,7 @@ import javax.swing.ImageIcon;
  */
 public class Espera4 extends VentanaImagenesAbstracta {
 
-    
-    FondoPanel fondo;
-    
+
     /**
      * Creates new form Espera
      */

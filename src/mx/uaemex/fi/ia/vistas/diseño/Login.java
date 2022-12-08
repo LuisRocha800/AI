@@ -18,8 +18,7 @@ public class Login extends VentanaImagenesAbstracta {
     public static final String CREAR_CUENTA = "Crear Cuenta";
     private String contraseña;
     private String usuario;
-    
-    FondoPanel fondo;
+
     /**
      * Creates new form NewJFrame
      */

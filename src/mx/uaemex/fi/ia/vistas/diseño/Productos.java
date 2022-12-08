@@ -26,10 +26,6 @@ public class Productos extends VentanaImagenesAbstracta{
     public static final String CREAR_CUENTA_AHORRO = "Crear Cuenta de Ahorro";
     
     public static final String REGRESAR = "Regresar a Login";
-    
-    FondoPanel fondo;
-
-    
     /**
      * Creates new form Productos
      */

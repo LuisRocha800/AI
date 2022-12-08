@@ -364,7 +364,7 @@ public class Ejecutivo extends Agent {
     
     @Override
     protected void setup() {
-        System.out.println("INCICIANDO EL EJECUTIVO");
+        System.out.println("INCICIANDO AGENTE EJECUTIVO");
         this.comando = (StringBuilder) this.getArguments()[0];
         this.respuesta = (RespuestaAgente) this.getArguments()[1];
         this.crearCuenta = (CrearCuenta) this.getArguments()[2];

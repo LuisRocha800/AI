@@ -12,10 +12,7 @@ import javax.swing.ImageIcon;
  * @author angel
  */
 public class Espera extends VentanaImagenesAbstracta {
-    FondoPanel fondo;
-    /**
-     * Creates new form Espera2
-     */
+
     public Espera() {
         initComponents();
         this.setLocationRelativeTo(this);

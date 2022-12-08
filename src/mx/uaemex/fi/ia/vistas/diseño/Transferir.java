@@ -25,7 +25,7 @@ public class Transferir extends VentanaAbstracta {
     /**
      * Creates new form Transferir
      */
-    FondoPanel fondo;
+
     public Transferir() {
         initComponents();
          setLocationRelativeTo(null);
