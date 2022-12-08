@@ -15,10 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import mx.uaemex.fi.ia.error.AgenteException;
 
-/**
- *
- * @author Elia
- */
 public class Productos extends VentanaImagenesAbstracta{
 
     public static final String CREAR_CUENTA_DEBITO = "Crear Cuenta de Debito";

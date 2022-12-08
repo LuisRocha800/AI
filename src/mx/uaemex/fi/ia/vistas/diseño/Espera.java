@@ -7,10 +7,6 @@ package mx.uaemex.fi.ia.vistas.diseño;
 
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author angel
- */
 public class Espera extends VentanaImagenesAbstracta {
 
     public Espera() {

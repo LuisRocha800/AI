@@ -12,10 +12,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import mx.uaemex.fi.ia.error.AgenteException;
 
-/**
- *
- * @author Elia
- */
 public class Monto extends VentanaAbstracta {
     
     public static final String CREAR_CUENTA_DEBITO_MONTO = "Crear Cuenta de Debito con Monto Inicial";

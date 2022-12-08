@@ -7,16 +7,9 @@ package mx.uaemex.fi.ia.vistas.diseño;
 
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author angel
- */
 public class Espera4 extends VentanaImagenesAbstracta {
 
 
-    /**
-     * Creates new form Espera
-     */
     public Espera4() {
         initComponents();
         this.setLocationRelativeTo(this);

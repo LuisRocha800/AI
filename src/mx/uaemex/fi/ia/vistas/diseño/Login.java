@@ -19,9 +19,6 @@ public class Login extends VentanaImagenesAbstracta {
     private String contraseña;
     private String usuario;
 
-    /**
-     * Creates new form NewJFrame
-     */
     public Login() {
         initComponents();
         this.setLocationRelativeTo(this);

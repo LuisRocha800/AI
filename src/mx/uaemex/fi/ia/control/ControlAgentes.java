@@ -122,9 +122,7 @@ public static final String RETIRO_E = "Retiro exitoso";
                     throw new AgenteException(respuesta.getMensaje());
                 }
                 this.padre.ejecutaComando(ControlFlujos.REGRESAR_CANCELAR_VENTANA_PRINCIPAL, null);
-//                if (respuesta.getMensaje().equals(CUENTA_CANCELADA)) {
-//                    
-//                }
+
                 break;
             case Cancelar.REGRESAR:
                 

@@ -153,8 +153,8 @@ public class ControlFlujos implements Control {
                 this.retirar.setVisible(false);
                 this.cuentaPrincipal.setVisible(false);
                 this.login.setVisible(true);
-                this.login.setUsuario("fer");
-                this.login.setContraseña("fer");
+                this.login.setUsuario("");
+                this.login.setContraseña("");
                 break;
             case ControlFlujos.REGRESAR_VENTANA_PRINCIPAL_LOGIN:
                 this.cuentaPrincipal.setVisible(false);

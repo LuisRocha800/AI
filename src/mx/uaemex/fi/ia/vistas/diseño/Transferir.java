@@ -22,9 +22,6 @@ public class Transferir extends VentanaAbstracta {
     
     public static final String REGRESAR = "Regresar de Transferir a Ventana Cuenta Principal";
     
-    /**
-     * Creates new form Transferir
-     */
 
     public Transferir() {
         initComponents();

@@ -83,7 +83,7 @@ public class Ejecutivo extends Agent {
                             cancelar_cuenta();
                             System.out.println("LAMENTAMOS MUCHO QUE HAYA CANCELADO SU CUENTA, SEGUIREMOS TRABAJANDO PARA MEJORAR");
        
-                            JOptionPane.showMessageDialog(null,"LAMENTAMOS MUCHO QUE HAYA CANCELADO SU CUENTA, SEGUIREMOS TRABAJANDO PARA MEJORAR");
+                            //JOptionPane.showMessageDialog(null,"LAMENTAMOS MUCHO QUE HAYA CANCELADO SU CUENTA, SEGUIREMOS TRABAJANDO PARA MEJORAR");
                         } catch (Codec.CodecException ex) {
                             Logger.getLogger(Ejecutivo.class.getName()).log(Level.SEVERE, null, ex);
                         } catch (OntologyException ex) {

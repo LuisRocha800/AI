@@ -15,10 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import mx.uaemex.fi.ia.error.AgenteException;
 
-/**
- *
- * @author angel
- */
 public class Retirar extends VentanaAbstracta {
 
     public static final String RETIRAR = "Retirar de Cuenta";

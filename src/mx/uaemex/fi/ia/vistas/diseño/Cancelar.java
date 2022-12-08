@@ -22,9 +22,7 @@ public class Cancelar extends VentanaAbstracta {
     
     public static final String REGRESAR = "Regresar de Cancelar a Ventana Cuenta Principal";
     
-    /**
-     * Creates new form Cancelar
-     */
+
     public Cancelar() {
         initComponents();
          setLocationRelativeTo(null);

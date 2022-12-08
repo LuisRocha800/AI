@@ -200,15 +200,7 @@ public class Ventanilla extends Agent {
                 respuesta.setMensaje("");
                 
                 
-                /*for(int i=0; i<10000){
-                    
-                }*/
-               
                 Transferencia tr = (Transferencia) ec; 
-//                System.out.println(tr.getTransaccion().getMonto());
-//                System.out.println(tr.getTransaccion().getClabe_origen());
-//                System.out.println(tr.getTransaccion().getClabe_destino());
-                
                 
                 comando.delete(0, comando.length());
                 
@@ -249,11 +241,6 @@ public class Ventanilla extends Agent {
             msg.setLanguage(codec.getName());
             msg.setOntology(ontologia.getName());
             
-            
-            //Retiro r = new Retiro();
-            //r.setRetiracion(retiracion);
-                
-
             getContentManager().fillContent(msg,retiracion);
 
             
@@ -273,10 +260,6 @@ public class Ventanilla extends Agent {
                 respuesta.setTipo(ControlAgentes.RESPUESTA_CORRECTA);
                 respuesta.setMensaje("");
                 
-                
-                /*for(int i=0; i<10000){
-                    
-                }*/
                
                 Retiracion re = (Retiracion) ec; 
 //                System.out.println(re.getTransaccion().getMonto());

@@ -14,10 +14,6 @@ import javax.swing.JTextField;
 import mx.uaemex.fi.ia.data.BooleanData;
 import mx.uaemex.fi.ia.error.AgenteException;
 
-/**
- *
- * @author Elia
- */
 public class CrearCuenta extends VentanaAbstracta {
     
     public static final String CREAR_CUENTA_DATOS = "Crear Cuenta con Datos Introducidos";

@@ -11,10 +11,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/**
- *
- * @author angel
- */
 public abstract class VentanaImagenesAbstracta extends VentanaAbstracta {
     private ImageIcon imagen;
     private Icon icono;

@@ -15,10 +15,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import mx.uaemex.fi.ia.error.AgenteException;
 
-/**
- *
- * @author angel
- */
 public class CuentaPrincipal extends VentanaImagenesAbstracta {
 
     public static final String RETIRAR = "Retirar de Cuenta";

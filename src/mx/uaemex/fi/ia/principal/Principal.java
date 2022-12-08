@@ -138,24 +138,6 @@ public class Principal {
         }
         //MOSTRAR LOGIN
         login.setVisible(true);
-        
-        
-        
-        
-        
-        
-        /*System.out.println("Despues de Agente");
-        
-        
-        Usuario u = new Usuario("PRUEBA");
-        Ejecutivo e = new Ejecutivo();
-        u.run();
-        
-        e.run();
-        u.setDato("PRUEBA");
-        
-        System.out.println("Despues de Agente");*/
-        
-        
+
     }
 }

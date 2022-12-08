@@ -8,10 +8,6 @@ package mx.uaemex.fi.ia.vistas.diseño;
 import javax.swing.JFrame;
 import mx.uaemex.fi.ia.control.Control;
 
-/**
- *
- * @author angel
- */
 public abstract class VentanaAbstracta extends JFrame {
     protected Control control;
     public void setControl(Control control){
