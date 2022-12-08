@@ -30,6 +30,7 @@ public class Retirar extends VentanaAbstracta {
      */
     public Retirar() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

@@ -26,6 +26,7 @@ public class Monto extends VentanaAbstracta {
      */
     public Monto() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

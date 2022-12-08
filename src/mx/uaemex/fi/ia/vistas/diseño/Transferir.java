@@ -27,9 +27,8 @@ public class Transferir extends VentanaAbstracta {
      */
     FondoPanel fondo;
     public Transferir() {
-        fondo = new FondoPanel();
-        this.setContentPane(fondo);
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

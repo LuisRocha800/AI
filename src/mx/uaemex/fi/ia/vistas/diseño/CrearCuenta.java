@@ -27,13 +27,12 @@ public class CrearCuenta extends VentanaAbstracta {
     private BooleanData es_cuenta_debito;
     
     
-    FondoPanel fondo;
-    
     /**
      * Creates new form CrearCuenta
      */
     public CrearCuenta() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**
