@@ -9,10 +9,7 @@ import mx.uaemex.fi.ia.control.data.Data;
 import mx.uaemex.fi.ia.error.AgenteException;
 import mx.uaemex.fi.ia.vistas.diseño.CuentaPrincipal;
 
-/**
- *
- * @author angel
- */
+
 public class ControlVentanaPrincipal implements Control {
     private Control padre;
     

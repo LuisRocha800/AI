@@ -5,10 +5,6 @@
  */
 package mx.uaemex.fi.ia.error;
 
-/**
- *
- * @author angel
- */
 public class AgenteException extends Exception {
 
     public AgenteException() {

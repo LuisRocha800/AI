@@ -327,7 +327,7 @@ public class Ventanilla extends Agent {
     
     @Override
     protected void setup() {
-        System.out.println("INICIE VENTANILLA");
+        System.out.println("INICIANDO AGENTE VENTANILLA");
         this.comando = (StringBuilder) this.getArguments()[0];
         this.respuesta = (RespuestaAgente) this.getArguments()[1];
         this.cuentaSession = (CuentaBancaria) this.getArguments()[2];

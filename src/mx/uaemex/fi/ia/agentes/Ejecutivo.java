@@ -17,6 +17,7 @@ import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import mx.uaemex.fi.ia.control.ControlAgentes;
 import mx.uaemex.fi.ia.data.ActivacionAhorro;
 import mx.uaemex.fi.ia.data.ActivacionDebito;
@@ -80,7 +81,9 @@ public class Ejecutivo extends Agent {
                     if (cancelar.getConfirmacion().isSelected()) {
                         try {
                             cancelar_cuenta();
-                            System.out.println(" -Lamentamos que haya tenido que cancelar, nos esforzaremos en mejorar-");
+                            System.out.println("LAMENTAMOS MUCHO QUE HAYA CANCELADO SU CUENTA, SEGUIREMOS TRABAJANDO PARA MEJORAR");
+       
+                            JOptionPane.showMessageDialog(null,"LAMENTAMOS MUCHO QUE HAYA CANCELADO SU CUENTA, SEGUIREMOS TRABAJANDO PARA MEJORAR");
                         } catch (Codec.CodecException ex) {
                             Logger.getLogger(Ejecutivo.class.getName()).log(Level.SEVERE, null, ex);
                         } catch (OntologyException ex) {
@@ -221,17 +224,16 @@ public class Ejecutivo extends Agent {
                 }*/
                 if(comando.toString().equals(ControlAgentes.CREAR_CUENTA_AHORRO)){
                     ActivacionAhorro ac = (ActivacionAhorro) ec; 
-                    System.out.println("----- CUENTA CREADA ÉXITOSAMENTE ----");
-                    System.out.println("Su CLABE de cuenta es = "+ ac.getCuenta_bancaria_ahorro().getClabe());
-                    System.out.println("Su número de tarjeta es = "+ac.getCuenta_bancaria_ahorro().getNumero_tarjeta());
-                    System.out.println("Monto inicial es de = "+ac.getCuenta_bancaria_ahorro().getMonto());
-                    
+                    System.out.println("CUENTA DE AHORRO CREADA CON EXITO");
+                    System.out.println("SU CLABE INTERBANCARIA ES: "+ ac.getCuenta_bancaria_ahorro().getClabe());
+                    System.out.println("SU NUMERO DE TARJETA ES: "+ac.getCuenta_bancaria_ahorro().getNumero_tarjeta());
+                    System.out.println("SU MONTO INICIAL ES DE: "+ac.getCuenta_bancaria_ahorro().getMonto());
                 }else{
                     ActivacionDebito ac = (ActivacionDebito) ec;
-                    System.out.println("----- CUENTA CREADA ÉXITOSAMENTE ----");
-                    System.out.println("Su CLABE de cuenta es = "+ac.getCuenta_bancaria_debito().getClabe());
-                    System.out.println("Su número de tarjeta es = "+ac.getCuenta_bancaria_debito().getNumero_tarjeta());
-                    System.out.println("Monto inicial es de = "+ac.getCuenta_bancaria_debito().getMonto());
+                    System.out.println("CUENTA DE DEBITO CREADA CON EXITO");
+                    System.out.println("SU CLABE INTERBANCARIA ES: "+ac.getCuenta_bancaria_debito().getClabe());
+                    System.out.println("SU NUMERO DE TARJETA ES: "+ac.getCuenta_bancaria_debito().getNumero_tarjeta());
+                    System.out.println("SU MONTO INICIAL ES DE: "+ac.getCuenta_bancaria_debito().getMonto());
                     
                 }
                 
@@ -362,7 +364,7 @@ public class Ejecutivo extends Agent {
     
     @Override
     protected void setup() {
-        System.out.println("INICIE EJECUTIVO");
+        System.out.println("INCICIANDO EL EJECUTIVO");
         this.comando = (StringBuilder) this.getArguments()[0];
         this.respuesta = (RespuestaAgente) this.getArguments()[1];
         this.crearCuenta = (CrearCuenta) this.getArguments()[2];

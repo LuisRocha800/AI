@@ -26,8 +26,8 @@ public class Login extends VentanaImagenesAbstracta {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(this);
-        this.usuario = "fernanda";
-        this.contraseña = "fernanda";
+        this.usuario = "admin";
+        this.contraseña = "admin";
     }
 
     

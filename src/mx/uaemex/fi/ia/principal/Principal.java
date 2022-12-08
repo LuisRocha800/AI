@@ -48,16 +48,16 @@ public class Principal {
     public static void main(String args[]){
         //CREANDO VARIABLES PARA COMUNICACIÓN ENTRE EL CONTROLADOR DE AGENTES Y LOS AGENTES
         Cliente c = new Cliente();
-        c.setNombre("Angel");
-        c.setCorreo("angel@gmail.com");
+        c.setNombre("Luis Angel Rocha Ronquillo");
+        c.setCorreo("rochaLuis000@gmail.com");
         c.setDomicilio("Toluca");
         c.setEdad(30);
-        c.setEstado_laboral("Trabajador");
-        c.setTelefono("0123456789");
+        c.setEstado_laboral("Estudiante");
+        c.setTelefono("7224566789");
         CuentaBancaria loginCuenta = new CuentaBancaria();
-        loginCuenta.setClabe("000000000000000000");
-        loginCuenta.setMonto(1000);
-        loginCuenta.setNumero_tarjeta("0000-0000-0000-0000");
+        loginCuenta.setClabe("564678535678975357");
+        loginCuenta.setMonto(1000000);
+        loginCuenta.setNumero_tarjeta("4915-8079-5951-0904");
         loginCuenta.setCliente(c);
         ArrayList<CuentaBancaria> cuentas = new ArrayList<CuentaBancaria>();
         cuentas.add(loginCuenta);

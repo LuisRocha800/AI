@@ -57,7 +57,7 @@ public class Usuario extends Agent {
             //COMUNICACION CON OTRO AGENTE
             
             
-            System.out.println("\nEsperando accion de Agentes");
+            System.out.println("\nESPERANDO UNA ACCION DE ALGUNO DE LOS AGENTES");
  
             mt = MessageTemplate.and(
             MessageTemplate.MatchLanguage(codec.getName()),
@@ -220,9 +220,9 @@ public class Usuario extends Agent {
                                 
                                 cuenta_origen.setMonto(cuenta_origen.getMonto()-transaccion.getMonto());
                                 System.out.println("");
-                                System.out.println("---- TRAFERENCIA ÉXITOSA ----");
-                                System.out.println("Su saldo se actualizó a  = " + cuenta_origen.getMonto());
-                                    System.out.println("Saldo de la cuenta destino = " + cuenta_destino.getMonto());
+                                System.out.println("TRANSFERENCIA REALIZADA CON EXITO");
+                                System.out.println("SU NUEVO SALDO ES: " + cuenta_origen.getMonto());
+                                    System.out.println("SALDO DE LA CUENTA DESTINO: " + cuenta_destino.getMonto());
                                 transaccion.setMonto(0);
                                 t.setTransaccion(transaccion);
                                 getContentManager().fillContent(msg2,t);
@@ -264,8 +264,8 @@ public class Usuario extends Agent {
                                
                                 cuenta_origen.setMonto(cuenta_origen.getMonto()-transaccion.getMonto());
                                 System.out.println("");
-                                System.out.println("---- RETIRO EXITOSO ----");
-                                System.out.println("Su saldo se actualizó a = " + cuenta_origen.getMonto());
+                                System.out.println("RETIRO REALIZADO CON EXITO");
+                                System.out.println("SU NUEVO SALDO ES: " + cuenta_origen.getMonto());
                                 //System.out.println("De LA CUENTA DESTINO EL MONTO NUEVO:" + cuenta_destino.getMonto());
                                 transaccion.setMonto(0);
                                 t.setTransaccion(transaccion);
@@ -308,8 +308,8 @@ public class Usuario extends Agent {
                                 //ESTO ES EN REALIDAD LO QUE CAMBIA DE LA LOGICA DE TRANSFERIR Y DEPOSITAR, SOLO QUE CON OTRO PREDICADO
                                
                                cuentas.remove(cuenta_origen);
-                                System.out.println("Se canceló la cuenta = " + cuenta_origen.getClabe());
-                                System.out.println("---- BUEN DÍA ----");
+                                System.out.println("SE REALIZO LA CANCELACION DE LA CUENTA: " + cuenta_origen.getClabe());
+                                System.out.println("QUE TENGA BUEN DIA");
                                 //System.out.println("De LA CUENTA DESTINO EL MONTO NUEVO:" + cuenta_destino.getMonto());
                                 
                                 t.setTransaccion(transaccion);
@@ -462,7 +462,7 @@ public class Usuario extends Agent {
     
     @Override
     protected void setup() {
-        System.out.println("INICIE USUARIO");
+        System.out.println("INICIANDO AGENTE USUARIO");
         this.cuentas = (ArrayList<CuentaBancaria>) this.getArguments()[0];
         getContentManager().registerLanguage(codec);
         getContentManager().registerOntology(ontologia);
@@ -476,7 +476,7 @@ public class Usuario extends Agent {
 
     @Override
     protected void takeDown() {
-        System.out.println("Agente Terminado");
+        System.out.println("AGENTE FINALIZADO");
         
     }
     

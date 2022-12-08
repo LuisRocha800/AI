@@ -5,10 +5,6 @@
  */
 package mx.uaemex.fi.ia.control.data;
 
-/**
- *
- * @author angel
- */
 public interface Data {
     
 }
